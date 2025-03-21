@@ -1,0 +1,7 @@
+module FileTransferApp {
+    typedef sequence<octet> FileData;
+    
+    interface FileTransfer {
+        FileData downloadFile(in string fileName);
+    };
+};
